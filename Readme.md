@@ -1,44 +1,21 @@
 ## Welcome to My Project
 
-> Great learning experience in addition to being a lot of fun utilizing predominantly javascript, angularjs and foundation. Modular framework complete with angular directives, controllers and services.  Database was formed using Parse.  
+>To view a live version of this project, please go to: autumn-reflections.surge.sh
+
+> Great learning experience in addition to being a lot of fun utilizing predominantly javascript, angularjs and foundation. Modular framework complete with angular directives, controllers, services and html templates.  Database was formed using Parse.  
 
 Potential future version(s) would include an image delete/update function.
 
 
-## Usage
+## Assets Used:
 
-- Clone this repo
-- Run `npm install` to install all necessary dependencies
-- Run `gulp start` to start the server and a handful of other tasks
-
-
-## Assets Installed By Default
-
-- [Normalize CSS](https://necolas.github.io/normalize.css/)
-
-## Assets Setup and ready for use
-
+- [Normalize CSS]
 - [Bourbon](http://bourbon.io/)
 - [Neat](http://neat.bourbon.io/)
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 - [Foundation 5](http://foundation.zurb.com/)
 
-#### How to use them?
-
-At the top of your `main.scss` file, just import any of the following:
-
-```scss
-@import "bourbon";
-@import "neat";
-
-@import "foundation";
-
-@import "font-awesome";
-```
-
-> Note: You probably don't want to use BOTH Bourbon/Neat & Foundation. Just pick one.
-
-## NPM Tools Used
+## NPM Tools Used:
 
 - [Babel](https://babeljs.io/)
 - [Browserify](http://browserify.org/)

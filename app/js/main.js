@@ -107,47 +107,6 @@ var _controllersHomeController2 = _interopRequireDefault(_controllersHomeControl
 
 _angular2['default'].module('app.layout', []).controller('HomeController', _controllersHomeController2['default']);
 
-// function homePage (HomeService) {
-//   return {
-//     restrict: 'EA',
-//     replace: true,
-//     scope {
-//       p: '=photo'
-//     },
-
-//     template: `
-//       <div class='picSet' ng-dblclick='vm.likes'
-//       <h3>{{ p.title}}</h3>
-//       p id="icon" class="fa fa-heart" ng-hide=""
-//       //ng-remove?
-//       <img ng-source={{ p.url }}>
-//       <h4>{{ p.caption }}</h4>Likes:
-
-//       </div>`
-
-//       controller: 'HomeController as vm',
-//       link: function (scope, element, attrs) {
-
-//       }
-//    }
-// }
-
-// AngularButton Code
-// let MyController = function ($scope) {
-
-//   $scope.count= 0;
-//   $scope.message = 'LIKES';
-
-//   $scope.incrementByOne = function () {
-
-//     $scope.count = $scope.count + 1;
-
-//     $scope.message = ($scope.count === 1) ? 'LIKE' : 'LIKES';
-
-//   };
-
-// };
-
 },{"./controllers/home.controller":4,"angular":13}],6:[function(require,module,exports){
 'use strict';
 
