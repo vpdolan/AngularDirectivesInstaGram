@@ -1,24 +1,22 @@
-let AddController = function ($scope, $http, PARSE) {
-
-  let url = PARSE.URL + 'classes/photos';
+let AddController = function (PhotoService, $state) {
 
   let vm = this;
-  let Pics = function(obj){
-    this.url = obj.url;
-    this.title = obj.title;
-    this.caption = obj.caption;
-  }
 
-  vm.addPics = function (gram) {
-    let x = new Pics (gram);
-    $http.post(url, x, PARSE.CONFIG)then.((res) => {
-      $state.go('root.home');
-    })
-  };
+  vm.addImage = addImage;
+
+  function addImage(imgObj) {
+    PhotoService.addImage(imgObj).then ( (res) => {
+      console.log(res);
+
+    });
+    
+    $state.go('root.home');
+
+  }
 
 };  
 
-AddController.$inject = ['$scope', '$http', 'PARSE'];
+AddController.$inject = ['PhotoService', '$state'];
 
 export default AddController; 
 

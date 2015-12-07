@@ -1,13 +1,19 @@
-let HomeController = function(PARSE) {
+let HomeController = function($scope, PhotoService) {
 
-  console.log(PARSE);
 
   let vm = this;
   
-  vm.title = 'Home Page';
+  vm.getAll = getAll();
 
+  function getAll() {
+    PhotoService.getAllImages().then ( (res) => {
+      vm.allImages = res.data.results;
+      console.log(vm.allImages);
+
+    });
+  }
 };
 
-HomeController.$inject = ['PARSE'];
+HomeController.$inject = ['$scope', 'PhotoService'];
 
 export default HomeController;

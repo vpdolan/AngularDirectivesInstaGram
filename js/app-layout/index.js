@@ -1,43 +1,38 @@
 import angular from 'angular';
-import 'angular-ui-router';
-import $ from 'jquery';
 
 import HomeController from './controllers/home.controller';
-import HomeService from './controllers/home.service';
-
 
 angular
   .module('app.layout', [])
-  .controller('HomeController', HomeController)
-  .service('HomeService', HomeService)
-  .directive('homePage', homePage)
+  .controller('HomeController', HomeController)  
 ;
 
-function homePage (HomeService) {
-  return {
-    restrict: 'EA',
-    replace: true,
-    scope {
-      p: '=photo'
-    },
+// function homePage (HomeService) {
+//   return {
+//     restrict: 'EA',
+//     replace: true,
+//     scope {
+//       p: '=photo'
+//     },
 
-    template: `
-      <div class='picSet' ng-dblclick='vm.likes'
-      <h3>{{ p.title}}</h3>
-      p id="icon" class="fa fa-heart" ng-hide=""
-      //ng-remove?
-      <img src={{ p.url }}>
-      <h4>{{ p.caption }}</h4>Likes: 
+//     template: `
+//       <div class='picSet' ng-dblclick='vm.likes'
+//       <h3>{{ p.title}}</h3>
+//       p id="icon" class="fa fa-heart" ng-hide=""
+//       //ng-remove?
+//       <img ng-source={{ p.url }}>
+//       <h4>{{ p.caption }}</h4>Likes: 
 
-      </div>`
+//       </div>`
 
-      controller: 'HomeController as vm',
-      link: function (scope, element, attrs) {
+//       controller: 'HomeController as vm',
+//       link: function (scope, element, attrs) {
 
 
-      }
-   }
-}
+
+//       }
+//    }
+// }
 
 
 // AngularButton Code

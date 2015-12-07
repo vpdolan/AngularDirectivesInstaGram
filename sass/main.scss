@@ -1,6 +1,53 @@
-// Put any @imports here
-// See Readme for a list of supported ones
+@import 'foundation';
+@import 'font-awesome';
+@import 'bourbon';
+@import 'neat';
 
 body {
   background: #e2ebf3;
 }
+
+h3 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  @include outer-container;
+  margin: auto;
+}
+
+.tiles {
+  position: relative;
+  width: 50%;
+  margin-left: 1.8%;
+  margin-top: 15px;
+  @include span-columns(2.72);
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  border: 1.85px solid #ff6600;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hidden {
+  position: absolute;
+  top: 20%;
+  margin-left: 8%;
+  display: none;
+  color: #ffffff;
+}
+
+.show {
+  position: absolute;
+  color: #ffffff;
+  margin-left: 40%;
+  margin-top: -115px;
+}
+
+
+
+
