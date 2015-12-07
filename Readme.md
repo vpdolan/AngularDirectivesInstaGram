@@ -1,6 +1,8 @@
 ## Welcome to My Project
 
-> I am your Readme.md file, you should probably update me.
+> Great learning experience in addition to being a lot of fun utilizing predominantly javascript, angularjs and foundation. Modular framework complete with angular directives, controllers and services.  Database was formed using Parse.  
+
+Potential future version(s) would include an image delete/update function.
 
 
 ## Usage
